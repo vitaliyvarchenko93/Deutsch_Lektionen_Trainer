@@ -569,5 +569,39 @@ const dictionary = {
   { type: "other", de: "am allerwichtigsten", ru: "важнее всего, самое важное" },
   { type: "other", de: "als", ru: "как, чем (в сравнениях), когда (в прошлом)" }
 ],
+  "Урок 14": [
+  // СУЩЕСТВИТЕЛЬНЫЕ
+  { type: "noun", de: "der Absender", ru: "отправитель" },
+  { type: "noun", de: "der Briefkasten", ru: "почтовый ящик" },
+  { type: "noun", de: "der Empfänger", ru: "получатель" },
+  { type: "noun", de: "das Päckchen", ru: "посылочка / бандероль" },
+  { type: "noun", de: "das Paket", ru: "посылка" },
+  { type: "noun", de: "der Schalter", ru: "касса / окошко" },
+  { type: "noun", de: "die Unterschrift", ru: "подпись" },
+  { type: "noun", de: "die Creme", ru: "крем" },
+  { type: "noun", de: "die Gebrauchsanweisung", ru: "инструкция по эксплуатации" },
+  { type: "noun", de: "das Gesicht", ru: "лицо" },
+  { type: "noun", de: "der Junge", ru: "мальчик / молодой человек" },
+  { type: "noun", de: "das Mädchen", ru: "девочка" },
+  { type: "noun", de: "das Projekt", ru: "проект" },
+  { type: "noun", de: "der Schritt", ru: "шаг" },
+  { type: "noun", de: "die Tafel", ru: "доска" },
+  { type: "noun", de: "der Zentimeter", ru: "сантиметр" },
 
+  // ГЛАГОЛЫ
+  { type: "verb", de: "ein ∙ packen", perfekt: "hat eingepackt", ru: "упаковывать / запаковывать", context: { de: "Er hat das Geschenk eingepackt.", ru: "Он запаковал подарок." } },
+  { type: "verb", de: "packen", perfekt: "hat gepackt", ru: "паковать / собирать (вещи)", context: { de: "Sie hat den Koffer gepackt.", ru: "Она собрала чемодан." } },
+  { type: "verb", de: "transportieren", perfekt: "hat transportiert", ru: "перевозить / транспортировать", context: { de: "Das Paket wird transportiert.", ru: "Посылку перевозят." } },
+  { type: "verb", de: "unterschreiben", perfekt: "hat unterschrieben", ru: "подписывать", context: { de: "Bitte unterschreiben Sie hier.", ru: "Пожалуйста, подпишите здесь." } },
+  { type: "verb", de: "an ∙ kreuzen", perfekt: "hat angekreuzt", ru: "отмечать крестиком", context: { de: "Kreuzen Sie die Antwort an.", ru: "Отметьте ответ крестиком." } },
+  { type: "verb", de: "benutzen", perfekt: "hat benutzt", ru: "пользоваться / использовать", context: { de: "Er benutzt das Wörterbuch.", ru: "Он использует словарь." } },
+  { type: "verb", de: "denken an", perfekt: "hat an ... gedacht", ru: "думать о (+ Akk.)", context: { de: "Ich denke an dich.", ru: "Я думаю о тебе." } },
+  { type: "verb", de: "ergänzen", perfekt: "hat ergänzt", ru: "дополнять / заполнять", context: { de: "Ergänzen Sie den Text.", ru: "Дополните текст." } },
+  { type: "verb", de: "gebrauchen", perfekt: "hat gebraucht", ru: "употреблять / использовать", context: { de: "Wann gebraucht man das Wort?", ru: "Когда употребляют это слово?" } },
+
+  // ДРУГИЕ ЧАСТИ РЕЧИ (Прилагательные, наречия)
+  { type: "other", de: "arm", ru: "бедный" },
+  { type: "other", de: "verschieden", ru: "разный / различный" },
+  { type: "other", de: "schließlich", ru: "в конце концов / наконец-то" }
+]
 };
