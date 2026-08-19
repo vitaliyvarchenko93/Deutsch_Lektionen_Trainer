@@ -843,23 +843,22 @@
     }
 
     function playCurrentAudio() {
-        if (!currentItem) return;
-        
-        audioPlayer.pause(); 
-        
-        let textToSpeak = currentItem.de.replace(/∙/g, ''); 
-        if (currentItem.type === 'verb' && currentItem.perfekt) {
-            textToSpeak += `, ${currentItem.perfekt}`;
-        }
-        
-        const encodedText = encodeURIComponent(textToSpeak);
-        const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=de&client=tw-ob&q=${encodedText}`;
-        
-        audioPlayer.src = googleTtsUrl;
-        audioPlayer.play().catch(err => {
-            console.log("Ошибка воспроизведения звука");
-        });
-    }
+    if (!currentWords || currentWords.length === 0) return;
+    
+    const wordData = currentWords[currentIndex];
+    if (!wordData) return;
+
+    // Останавливаем предыдущую озвучку, если она идёт
+    window.speechSynthesis.cancel();
+
+    // Создаём новое речевое высказывание
+    const utterance = new SpeechSynthesisUtterance(wordData.de);
+    utterance.lang = 'de-DE'; // Устанавливаем немецкий язык
+    utterance.rate = 0.9;     // Скорость речи (1.0 — обычная, 0.9 — чуть медленнее для обучения)
+
+    // Воспроизводим
+    window.speechSynthesis.speak(utterance);
+}
 
     function formatGermanHTML(item) {
         let textHtml = '';
