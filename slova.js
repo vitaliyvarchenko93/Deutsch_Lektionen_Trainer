@@ -603,5 +603,49 @@ const dictionary = {
   { type: "other", de: "arm", ru: "бедный" },
   { type: "other", de: "verschieden", ru: "разный / различный" },
   { type: "other", de: "schließlich", ru: "в конце концов / наконец-то" }
+],
+  "Урок 15": [
+  // СУЩЕСТВИТЕЛЬНЫЕ
+  { type: "noun", de: "die DVD", ru: "DVD-диск" },
+  { type: "noun", de: "das Fernsehen", ru: "телевидение" },
+  { type: "noun", de: "die Folge", ru: "серия / эпизод" },
+  { type: "noun", de: "der Krimi", ru: "детектив (фильм или роман)" },
+  { type: "noun", de: "das Programm", ru: "программа" },
+  { type: "noun", de: "der Rundfunk", ru: "радиовещание / радио" },
+  { type: "noun", de: "der Sender", ru: "канал / радиостанция" },
+  { type: "noun", de: "der Privatsender", ru: "частный канал" },
+  { type: "noun", de: "die Sendung", ru: "передача / трансляция" },
+  { type: "noun", de: "die Serie", ru: "сериал" },
+  { type: "noun", de: "der Spielfilm", ru: "художественный фильм" },
+  { type: "noun", de: "das Video", ru: "видео" },
+  { type: "noun", de: "der Zuschauer", ru: "зритель" },
+  { type: "noun", de: "der Regisseur", ru: "режиссёр" },
+  { type: "noun", de: "die Fernbedienung", ru: "пульт дистанционного управления" },
+  { type: "noun", de: "die Mediathek", ru: "медиатека / онлайн-архив передач" },
+  { type: "noun", de: "der Darsteller", ru: "исполнитель роли / актёр" },
+  { type: "noun", de: "der Anzug", ru: "костюм (мужской)" },
+  { type: "noun", de: "der Fahrplan", ru: "расписание движения" },
+  { type: "noun", de: "die Gaststätte", ru: "ресторан / трактир / кафе" },
+  { type: "noun", de: "die Gegend", ru: "местность / район" },
+  { type: "noun", de: "der Kinderwagen", ru: "детская коляска" },
+  { type: "noun", de: "das Parfüm", ru: "парфюм / духи" },
+  { type: "noun", de: "die Rose", ru: "роза" },
+  { type: "noun", de: "der Topf", ru: "кастрюля / гончарный горшок" },
+
+  // ГЛАГОЛЫ
+  { type: "verb", de: "gucken", perfekt: "hat geguckt", ru: "смотреть / глядеть", context: { de: "Er hat Fernsehen geguckt.", ru: "Он смотрел телевизор." } },
+  { type: "verb", de: "produzieren", perfekt: "hat produziert", ru: "производить / создавать", context: { de: "Der Sender hat den Film produziert.", ru: "Канал произвёл этот фильм." } },
+  { type: "verb", de: "bedeuten", perfekt: "hat bedeutet", ru: "означать / знаходить", context: { de: "Was bedeutet dieses Wort?", ru: "Что означает это слово?" } },
+
+  // ДРУГИЕ ЧАСТИ РЕЧИ (Прилагательные, наречия, предлоги, фразы)
+  { type: "other", de: "öffentlich", ru: "общественный / публичный" },
+  { type: "other", de: "privat", ru: "частный" },
+  { type: "other", de: "eigen-", ru: "собственный" },
+  { type: "other", de: "fest", ru: "твёрдый / прочный / постоянный" },
+  { type: "other", de: "feste Gewohnheit", ru: "укоренившаяся привычка" },
+  { type: "other", de: "knapp", ru: "едва / почти / впритык" },
+  { type: "other", de: "sozial", ru: "социальный" },
+  { type: "other", de: "außer", ru: "кроме / за исключением (+ Dat.)" },
+  { type: "other", de: "inzwischen", ru: "между тем / тем временем" }
 ]
 };
