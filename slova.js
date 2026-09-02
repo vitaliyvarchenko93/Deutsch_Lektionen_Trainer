@@ -647,5 +647,42 @@ const dictionary = {
   { type: "other", de: "sozial", ru: "социальный" },
   { type: "other", de: "außer", ru: "кроме / за исключением (+ Dat.)" },
   { type: "other", de: "inzwischen", ru: "между тем / тем временем" }
+],
+  "Урок 16": [
+  // СУЩЕСТВИТЕЛЬНЫЕ
+  { type: "noun", de: "der Aufenthalt", ru: "пребывание" }, //
+  { type: "noun", de: "die Bar", ru: "бар" }, //
+  { type: "noun", de: "das Doppelzimmer", ru: "двухместный номер" }, //
+  { type: "noun", de: "das Einzelzimmer", ru: "одноместный номер" }, //
+  { type: "noun", de: "die Empfangshalle", ru: "вестибюль / холл" }, //
+  { type: "noun", de: "der Fitnessraum", ru: "фитнес-зал / тренажерный зал" }, //
+  { type: "noun", de: "der Frühstücksraum", ru: "зал для завтраков" }, //
+  { type: "noun", de: "die Halbpension", ru: "полупансион" }, //
+  { type: "noun", de: "der Kiosk", ru: "киоск" }, //
+  { type: "noun", de: "die Konferenz", ru: "конференция" }, //
+  { type: "noun", de: "der Konferenzraum", ru: "конференц-зал" }, //
+  { type: "noun", de: "das Nichtraucherzimmer", ru: "номер для некурящих" }, //
+  { type: "noun", de: "der Parkplatz", ru: "парковка / стоянка" }, //
+  { type: "noun", de: "das Restaurant", ru: "ресторан" }, //
+  { type: "noun", de: "die Rezeption", ru: "ресепшн / стойка регистрации" }, //
+  { type: "noun", de: "die Sauna", ru: "сауна" }, //
+  { type: "noun", de: "das Schwimmbad", ru: "бассейн" }, //
+  { type: "noun", de: "die Vollpension", ru: "полный пансион" }, //
+  { type: "noun", de: "der Ärger", ru: "неприятность / досада / гнев" }, //
+  { type: "noun", de: "der Raucher", ru: "курильщик" }, //
+  { type: "noun", de: "der Spaß", ru: "удовольствие" }, //
+
+  // ГЛАГОЛЫ
+  { type: "verb", de: "wecken", perfekt: "hat geweckt", ru: "будить", context: { de: "Bitte wecken Sie mich um 7 Uhr.", ru: "Пожалуйста, разбудите меня в 7 часов." } }, //
+
+  // ДРУГИЕ ЧАСТИ РЕЧИ (Прилагательные, предлоги, фразы)
+  { type: "other", de: "frei", ru: "свободный (о месте или номере)" }, //
+  { type: "other", de: "Viel Spaß!", ru: "Приятного времяпрепровождения! / Желаю хорошо повеселиться!" }, //
+  { type: "other", de: "angenehm", ru: "приятный / приятно" }, //
+  { type: "other", de: "durch", ru: "через / сквозь (+ Akk.)" }, //
+  { type: "other", de: "gegenüber", ru: "напротив (+ Dat.)" }, //
+  { type: "other", de: "vorbei", ru: "мимо / позади" }, //
+  { type: "other", de: "an ... vorbei", ru: "мимо (кого-либо / чего-либо)" }, //
+  { type: "other", de: "überall", ru: "везде / повсюду" } //
 ]
 };
