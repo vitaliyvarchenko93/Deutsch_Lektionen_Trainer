@@ -684,5 +684,51 @@ const dictionary = {
   { type: "other", de: "vorbei", ru: "мимо / позади" }, //
   { type: "other", de: "an ... vorbei", ru: "мимо (кого-либо / чего-либо)" }, //
   { type: "other", de: "überall", ru: "везде / повсюду" } //
+],
+  "Урок 17": [
+  // СУЩЕСТВИТЕЛЬНЫЕ
+  { type: "noun", de: "die Abfahrt", ru: "отправление / выезд" },
+  { type: "noun", de: "die Ankunft", ru: "прибытие / приезд" },
+  { type: "noun", de: "die Autobahn", ru: "автобан / автомагистраль" },
+  { type: "noun", de: "die Fähre", ru: "паром" },
+  { type: "noun", de: "das Gebirge", ru: "горы / горный массив" },
+  { type: "noun", de: "die Grenze", ru: "граница" },
+  { type: "noun", de: "die Insel", ru: "остров" },
+  { type: "noun", de: "das Kfz", ru: "автотранспортное средство" },
+  { type: "noun", de: "das Kraftfahrzeug", ru: "автотранспортное средство" },
+  { type: "noun", de: "die Küste", ru: "побережье / берег" },
+  { type: "noun", de: "der Motor", ru: "двигатель / мотор" },
+  { type: "noun", de: "die Panne", ru: "поломка / неисправность" },
+  { type: "noun", de: "die Reifenpanne", ru: "прокол / повреждение шины" },
+  { type: "noun", de: "die Region", ru: "регион / область" },
+  { type: "noun", de: "der Reifen", ru: "шина / покришка" },
+  { type: "noun", de: "die Tankstelle", ru: "заправка / АЗС" },
+  { type: "noun", de: "die Kfz-Werkstatt", ru: "автомастерская / СТО" },
+  { type: "noun", de: "das Schiff", ru: "корабль / судно" },
+  { type: "noun", de: "der Wagen", ru: "автомобиль / машина" },
+  { type: "noun", de: "das Motorrad", ru: "мотоцикл" },
+  { type: "noun", de: "der Bauer", ru: "фермер / крестьянин" },
+  { type: "noun", de: "das Feld", ru: "поле" },
+  { type: "noun", de: "die Kassette", ru: "кассета" },
+  { type: "noun", de: "das Pech", ru: "неудача / везение со знаком минус" },
+  { type: "noun", de: "die Seite", ru: "сторона / страница" },
+  { type: "noun", de: "der Zufall", ru: "случай / совпадение" },
+
+  // ГЛАГОЛЫ
+  { type: "verb", de: "tanken", perfekt: "hat getankt", ru: "заправлять(ся) топливом", context: { de: "Er hat das Auto getankt.", ru: "Он заправил машину." } },
+  { type: "verb", de: "überqueren", perfekt: "hat überquert", ru: "пересекать / переходить", context: { de: "Wir haben die Grenze überquert.", ru: "Мы пересекли границу." } },
+  { type: "verb", de: "wechseln", perfekt: "hat gewechselt", ru: "менять / заменять", context: { de: "Er hat den Reifen gewechselt.", ru: "Он заменил шину." } },
+  { type: "verb", de: "Reifen wechseln", perfekt: "hat Reifen gewechselt", ru: "менять шины / менять колесо", context: { de: "Ich muss den Reifen wechseln.", ru: "Мне нужно поменять колесо." } },
+
+  // ДРУГИЕ ЧАСТИ РЕЧИ (Местоимения, прилагательные, наречия, устойчивые фразы)
+  { type: "other", de: "jemand", ru: "кто-то / кто-нибудь" },
+  { type: "other", de: "niemand", ru: "никто" },
+  { type: "other", de: "ärgerlich", ru: "досадный / неприятный" },
+  { type: "other", de: "bekannt", ru: "известный / знакомый" },
+  { type: "other", de: "müde", ru: "уставший" },
+  { type: "other", de: "insgesamt", ru: "в общем / всего" },
+  { type: "other", de: "mitten", ru: "посреди / в середине" },
+  { type: "other", de: "plötzlich", ru: "вдруг / внезапно" },
+  { type: "other", de: "Nicht zu glauben!", ru: "Трудно поверить! / Невероятно!" },
 ]
 };
