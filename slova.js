@@ -917,4 +917,3 @@ const dictionary = {
     { type: "other", de: "dieser / diese / dieses", ru: "этот / эта / это" }
   ]
 };
-};
