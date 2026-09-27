@@ -731,7 +731,6 @@ const dictionary = {
   { type: "other", de: "plötzlich", ru: "вдруг / внезапно" },
   { type: "other", de: "Nicht zu glauben!", ru: "Трудно поверить! / Невероятно!" },
 ],
-  const dictionary = {
   "Урок 18": [
     // СУЩЕСТВИТЕЛЬНЫЕ
     { type: "noun", de: "das Eis", ru: "лёд / мороженое" },
@@ -782,7 +781,6 @@ const dictionary = {
     { type: "other", de: "Im Gegenteil!", ru: "Наоборот!" },
     { type: "other", de: "Quatsch!", ru: "Чушь! / Ерунда!" }
   ],
-
   "Урок 19": [
     // СУЩЕСТВИТЕЛЬНЫЕ
     { type: "noun", de: "der Beginn", ru: "начало" },
@@ -832,7 +830,6 @@ const dictionary = {
     { type: "other", de: "Schon gut.", ru: "Ну хорошо. / Ладно." },
     { type: "other", de: "Unsinn!", ru: "Бред! / Ерунда! / Чушь!" }
   ],
-
   "Урок 20": [
     // СУЩЕСТВИТЕЛЬНЫЕ
     { type: "noun", de: "der Autor", ru: "автор (мужчина)" },
