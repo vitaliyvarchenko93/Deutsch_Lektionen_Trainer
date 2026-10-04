@@ -917,7 +917,6 @@ const dictionary = {
     { type: "other", de: "dieser / diese / dieses", ru: "этот / эта / это" }
   ],
   "Урок 22": [
- "Урок 22": [
     // СУЩЕСТВИТЕЛЬНЫЕ
     { type: "noun", de: "die Anmeldung", ru: "регистрация / заявка" },
     { type: "noun", de: "der Buchstabe", ru: "буква" },
