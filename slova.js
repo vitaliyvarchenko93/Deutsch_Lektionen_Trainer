@@ -917,6 +917,7 @@ const dictionary = {
     { type: "other", de: "dieser / diese / dieses", ru: "этот / эта / это" }
   ],
   "Урок 22": [
+ "Урок 22": [
     // СУЩЕСТВИТЕЛЬНЫЕ
     { type: "noun", de: "die Anmeldung", ru: "регистрация / заявка" },
     { type: "noun", de: "der Buchstabe", ru: "буква" },
@@ -936,17 +937,17 @@ const dictionary = {
     { type: "noun", de: "das Ziel", ru: "цель / пункт назначения" },
 
     // ГЛАГОЛЫ
-    { type: "verb", de: "anklicken (hat angeklickt)", ru: "кликать / нажимать мышкой" },
-    { type: "verb", de: "ausfüllen (hat ausgefüllt)", ru: "заполнять (форму, бланк)" },
-    { type: "verb", de: "bestätigen (hat bestätigt)", ru: "подтверждать" },
-    { type: "verb", de: "wählen (hat gewählt)", ru: "выбирать / набирать номер" },
-    { type: "verb", de: "besitzen (hat besessen)", ru: "владеть / обладать" },
-    { type: "verb", de: "erreichen (hat erreicht)", ru: "достигать / добираться / заставать (кого-то)" },
-    { type: "verb", de: "mieten (hat gemietet)", ru: "арендовать / снимать" },
-    { type: "verb", de: "teilen (hat geteilt)", ru: "делить / разделять" },
-    { type: "verb", de: "sich vorstellen (hat vorgestellt)", ru: "представлять себе / представляться" },
-    { type: "verb", de: "zurückbringen (hat zurückgebracht)", ru: "возвращать / приносить обратно" },
-    { type: "verb", de: "zurückfahren (ist zurückgefahren)", ru: "ехать обратно / возвращаться" },
+    { type: "verb", de: "anklicken", perfekt: "hat angeklickt", ru: "кликать / нажимать мышкой", context: { de: "Klicken Sie auf den Link an.", ru: "Нажмите на ссылку." } },
+    { type: "verb", de: "ausfüllen", perfekt: "hat ausgefüllt", ru: "заполнять (форму, бланк)", context: { de: "Füllen Sie bitte das Formular aus.", ru: "Заполните, пожалуйста, форму." } },
+    { type: "verb", de: "bestätigen", perfekt: "hat bestätigt", ru: "подтверждать", context: { de: "Er hat die Anmeldung bestätigt.", ru: "Он подтвердил регистрацию." } },
+    { type: "verb", de: "wählen", perfekt: "hat gewählt", ru: "выбирать / набирать номер", context: { de: "Sie hat ein neues Passwort gewählt.", ru: "Она выбрала новый пароль." } },
+    { type: "verb", de: "besitzen", perfekt: "hat besessen", ru: "владеть / обладать", context: { de: "Er besitzt ein gutes Auto.", ru: "Он владеет хорошей машиной." } },
+    { type: "verb", de: "erreichen", perfekt: "hat erreicht", ru: "достигать / добираться / заставать (кого-то)", context: { de: "Ich habe mein Ziel erreicht.", ru: "Я достиг своей цели." } },
+    { type: "verb", de: "mieten", perfekt: "hat gemietet", ru: "арендовать / снимать", context: { de: "Wir haben eine Wohnung gemietet.", ru: "Мы сняли квартиру." } },
+    { type: "verb", de: "teilen", perfekt: "hat geteilt", ru: "делить / разделять", context: { de: "Sie hat das Foto mit Freunden geteilt.", ru: "Она поделилась фото с друзьями." } },
+    { type: "verb", de: "sich vorstellen", perfekt: "hat vorgestellt", ru: "представлять себе / представляться", context: { de: "Stellen Sie sich bitte vor.", ru: "Представьтесь, пожалуйста." } },
+    { type: "verb", de: "zurückbringen", perfekt: "hat zurückgebracht", ru: "возвращать / приносить обратно", context: { de: "Er hat das Buch zurückgebracht.", ru: "Он вернул книгу обратно." } },
+    { type: "verb", de: "zurückfahren", perfekt: "ist zurückgefahren", ru: "ехать обратно / возвращаться", context: { de: "Wir sind gestern zurückgefahren.", ru: "Мы поехали обратно вчера." } },
 
     // ДРУГИЕ ЧАСТИ РЕЧИ И МЕСТОИМЕНИЯ
     { type: "other", de: "umweltfreundlich", ru: "экологичный / безопасный для окружающей среды" },
@@ -956,5 +957,5 @@ const dictionary = {
     { type: "other", de: "na klar", ru: "ну конечно! / само собой!" },
     { type: "other", de: "unterwegs", ru: "в пути / по дороге" },
     { type: "other", de: "unterwegs sein", ru: "быть в пути / находиться в дороге" }
-    ],
+  ]
 };
