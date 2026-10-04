@@ -689,7 +689,7 @@
             listBlock.style.display = 'block';
             starsBlock.style.display = 'none';
             if (filterBox) filterBox.style.display = 'flex';
-            audioPlayer.pause();
+            window.speechSynthesis.cancel();
             renderWordList();
         } else {
             cardBlock.style.display = 'block';
@@ -769,20 +769,17 @@
 
     function playCurrentAudio() {
         if (!currentItem) return;
-        audioPlayer.pause(); 
         
         let textToSpeak = currentItem.de.replace(/[∙.]/g, '').replace(/\//g, ','); 
         if (currentItem.type === 'verb' && currentItem.perfekt) {
             textToSpeak += `, ${currentItem.perfekt}`;
         }
         
-        const encodedText = encodeURIComponent(textToSpeak);
-        const googleTtsUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=de&client=tw-ob&q=${encodedText}`;
-        
-        audioPlayer.src = googleTtsUrl;
-        audioPlayer.play().catch(err => {
-            console.log("Ошибка воспроизведения звука");
-        });
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(textToSpeak);
+        utterance.lang = 'de-DE';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
     }
 
     function formatGermanHTML(item) {
@@ -853,7 +850,7 @@
         input2.style.borderColor = '#ced4da';
         
         closeContext();
-        audioPlayer.pause();
+        window.speechSynthesis.cancel();
 
         if (currentMode === 'learn') {
             ruWordEl.innerHTML = currentItem.ru;
