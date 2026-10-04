@@ -537,7 +537,7 @@
     let currentWordIndex = 0;
     let sessionStarsCount = 0;
 
-    const audioPlayer = new Audio();
+    let currentAudioInstance = null;
 
     const cardBlock = document.getElementById('card-block');
     const cardMainContent = document.getElementById('card-main-content');
@@ -689,7 +689,11 @@
             listBlock.style.display = 'block';
             starsBlock.style.display = 'none';
             if (filterBox) filterBox.style.display = 'flex';
-            window.speechSynthesis.cancel();
+            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+            if (currentAudioInstance) {
+                currentAudioInstance.pause();
+                currentAudioInstance = null;
+            }
             renderWordList();
         } else {
             cardBlock.style.display = 'block';
@@ -774,12 +778,51 @@
         if (currentItem.type === 'verb' && currentItem.perfekt) {
             textToSpeak += `, ${currentItem.perfekt}`;
         }
-        
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(textToSpeak);
-        utterance.lang = 'de-DE';
-        utterance.rate = 0.9;
-        window.speechSynthesis.speak(utterance);
+
+        if (currentAudioInstance) {
+            currentAudioInstance.pause();
+            currentAudioInstance = null;
+        }
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+        }
+
+        const encodedText = encodeURIComponent(textToSpeak);
+        const audioUrl = `https://translate.google.com/translate_tts?ie=UTF-8&tl=de&client=tw-ob&q=${encodedText}`;
+
+        const audio = new Audio(audioUrl);
+        currentAudioInstance = audio;
+
+        const playPromise = audio.play();
+
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                console.warn("Google TTS недоступен или заблокирован, переключаемся на системную озвучку:", error);
+                fallbackToSpeechSynthesis(textToSpeak);
+            });
+        }
+    }
+
+    function fallbackToSpeechSynthesis(text) {
+        if (!('speechSynthesis' in window)) return;
+
+        setTimeout(() => {
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'de-DE';
+            utterance.rate = 0.85;
+
+            const voices = window.speechSynthesis.getVoices();
+            const naturalVoice = voices.find(v => 
+                v.lang.startsWith('de') && 
+                (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Online') || v.name.includes('Siri') || v.name.includes('Clara') || v.name.includes('Viktor'))
+            );
+
+            if (naturalVoice) {
+                utterance.voice = naturalVoice;
+            }
+
+            window.speechSynthesis.speak(utterance);
+        }, 50);
     }
 
     function formatGermanHTML(item) {
@@ -850,7 +893,11 @@
         input2.style.borderColor = '#ced4da';
         
         closeContext();
-        window.speechSynthesis.cancel();
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+        if (currentAudioInstance) {
+            currentAudioInstance.pause();
+            currentAudioInstance = null;
+        }
 
         if (currentMode === 'learn') {
             ruWordEl.innerHTML = currentItem.ru;
@@ -1049,6 +1096,16 @@
 
     setupEnterKey(input1);
     setupEnterKey(input2);
+
+    // Инициализация загрузки системных голосов для мобильных браузеров
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.getVoices();
+        if (window.speechSynthesis.onvoiceschanged !== undefined) {
+            window.speechSynthesis.onvoiceschanged = () => {
+                window.speechSynthesis.getVoices();
+            };
+        }
+    }
 
     // Скрипт инициализации выбора урока 1-24 при загрузке
     (function() {
