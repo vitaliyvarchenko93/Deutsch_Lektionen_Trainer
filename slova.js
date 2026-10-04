@@ -915,5 +915,45 @@ const dictionary = {
     { type: "other", de: "schmal", ru: "узкий" },
     { type: "other", de: "welcher / welche / welches", ru: "какой / какая / какое / который" },
     { type: "other", de: "dieser / diese / dieses", ru: "этот / эта / это" }
-  ]
+  ],
+  // УРОК 22 (Lektion 22)
+    // СУЩЕСТВИТЕЛЬНЫЕ
+    { type: "noun", de: "die Anmeldung", ru: "регистрация / заявка" },
+    { type: "noun", de: "der Buchstabe", ru: "буква" },
+    { type: "noun", de: "die Chipkarte", ru: "чип-карта / смарт-карта" },
+    { type: "noun", de: "die Daten", ru: "данные" },
+    { type: "noun", de: "die Zugangsdaten", ru: "данные для доступа / логин и пароль" },
+    { type: "noun", de: "das Passwort", ru: "пароль" },
+    { type: "noun", de: "der Vertrag", ru: "договор / контракт" },
+    { type: "noun", de: "die Zahl", ru: "число / цифра" },
+    { type: "noun", de: "die Fahrkarte", ru: "проездной билет" },
+    { type: "noun", de: "das Billett", ru: "билет (в Швейцарии)" },
+    { type: "noun", de: "das Mitglied", ru: "член (организации, клуба)" },
+    { type: "noun", de: "die Organisation", ru: "организация" },
+    { type: "noun", de: "die Steuer", ru: "налог" },
+    { type: "noun", de: "die Umwelt", ru: "окружающая среда" },
+    { type: "noun", de: "die Verbindung", ru: "соединение / связь / транспортный рейс" },
+    { type: "noun", de: "das Ziel", ru: "цель / пункт назначения" },
+
+    // ГЛАГОЛЫ
+    { type: "verb", de: "anklicken (hat angeklickt)", ru: "кликать / нажимать мышкой" },
+    { type: "verb", de: "ausfüllen (hat ausgefüllt)", ru: "заполнять (форму, бланк)" },
+    { type: "verb", de: "bestätigen (hat bestätigt)", ru: "подтверждать" },
+    { type: "verb", de: "wählen (hat gewählt)", ru: "выбирать / набирать номер" },
+    { type: "verb", de: "besitzen (hat besessen)", ru: "владеть / обладать" },
+    { type: "verb", de: "erreichen (hat erreicht)", ru: "достигать / добираться / заставать (кого-то)" },
+    { type: "verb", de: "mieten (hat gemietet)", ru: "арендовать / снимать" },
+    { type: "verb", de: "teilen (hat geteilt)", ru: "делить / разделять" },
+    { type: "verb", de: "sich vorstellen (hat vorgestellt)", ru: "представлять себе / представляться" },
+    { type: "verb", de: "zurückbringen (hat zurückgebracht)", ru: "возвращать / приносить обратно" },
+    { type: "verb", de: "zurückfahren (ist zurückgefahren)", ru: "ехать обратно / возвращаться" },
+
+    // ДРУГИЕ ЧАСТИ РЕЧИ И МЕСТОИМЕНИЯ
+    { type: "other", de: "umweltfreundlich", ru: "экологичный / безопасный для окружающей среды" },
+    { type: "other", de: "außerhalb", ru: "снаружи / за пределами" },
+    { type: "other", de: "höchstens", ru: "максимум / самое большее" },
+    { type: "other", de: "klar", ru: "ясно / понятно / конечно" },
+    { type: "other", de: "na klar", ru: "ну конечно! / само собой!" },
+    { type: "other", de: "unterwegs", ru: "в пути / по дороге" },
+    { type: "other", de: "unterwegs sein", ru: "быть в пути / находиться в дороге" }
 };
