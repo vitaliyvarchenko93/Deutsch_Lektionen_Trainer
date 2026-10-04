@@ -916,7 +916,7 @@ const dictionary = {
     { type: "other", de: "welcher / welche / welches", ru: "какой / какая / какое / который" },
     { type: "other", de: "dieser / diese / dieses", ru: "этот / эта / это" }
   ],
-  // УРОК 22 (Lektion 22)
+  "Урок 22": [
     // СУЩЕСТВИТЕЛЬНЫЕ
     { type: "noun", de: "die Anmeldung", ru: "регистрация / заявка" },
     { type: "noun", de: "der Buchstabe", ru: "буква" },
@@ -956,4 +956,5 @@ const dictionary = {
     { type: "other", de: "na klar", ru: "ну конечно! / само собой!" },
     { type: "other", de: "unterwegs", ru: "в пути / по дороге" },
     { type: "other", de: "unterwegs sein", ru: "быть в пути / находиться в дороге" }
+    ],
 };
