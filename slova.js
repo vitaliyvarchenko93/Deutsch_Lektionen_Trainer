@@ -956,5 +956,5 @@ const dictionary = {
     { type: "other", de: "na klar", ru: "ну конечно! / само собой!" },
     { type: "other", de: "unterwegs", ru: "в пути / по дороге" },
     { type: "other", de: "unterwegs sein", ru: "быть в пути / находиться в дороге" }
-  ]
+  ],
 };
