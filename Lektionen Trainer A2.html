@@ -534,7 +534,7 @@
             <option value="Урок 4">Lektion 4: Was darf es sein?</option>
             <option value="Урок 5">Lektion 5: Schaut mal, der schöne Dom!</option>
             <option value="Урок 6">Lektion 6: Meine lieblingsveranstaltung </option>
-            <option value="Урок 7">Lektion 7: Wir могли montags joggen gehen.</option>
+            <option value="Урок 7">Lektion 7: Wir könnten montags joggen gehen.</option>
             <option value="Урок 8">Lektion 8: Hoffentlich ist es nicht das Herz! </option>
             <option value="Урок 9">Lektion 9: Bei guten Autos sind wir ganz vorn</option>
             <option value="Урок 10">Lektion 10: Gut, dass du reserviert hast. </option>
@@ -650,7 +650,7 @@
     let currentWordIndex = 0;
     let sessionStarsCount = 0;
 
-    // Предзагрузка синтеза речи для мобильных браузеров
+    // Предзагрузка синтеза речи для мобильных устройств
     if ('speechSynthesis' in window) {
         window.speechSynthesis.onvoiceschanged = () => {
             window.speechSynthesis.getVoices();
@@ -858,22 +858,19 @@
         if (!currentItem || !currentItem.de) return;
         if (!('speechSynthesis' in window)) return;
 
-        window.speechSynthesis.cancel(); // Очищаем прошлые очереди
+        window.speechSynthesis.cancel();
 
-        // Для глаголов озвучиваем Инфинитив + Perfekt
         let textToSpeak = currentItem.de;
         if (currentItem.type === 'verb' && currentItem.perfekt) {
             textToSpeak += `, ${currentItem.perfekt}`;
         }
 
-        // Очищаем служебные точки/символы если есть
         textToSpeak = textToSpeak.replace(/\./g, '');
 
         const utterance = new SpeechSynthesisUtterance(textToSpeak);
         utterance.lang = 'de-DE';
         utterance.rate = 0.9;
 
-        // Поиск немецкого голоса для iOS/Chrome
         const voices = window.speechSynthesis.getVoices();
         const deVoice = voices.find(v => v.lang.startsWith('de'));
         if (deVoice) {
@@ -1162,7 +1159,6 @@
                 setMode('learn'); 
             }
         } else {
-            // Если параметр не передан, генерируем сетку выбора от 1 до 24
             const gridContainer = document.getElementById('lessonsGridContainer');
             for (let i = 1; i <= 24; i++) {
                 const btn = document.createElement('a');
