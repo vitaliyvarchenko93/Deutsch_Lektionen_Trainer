@@ -534,7 +534,7 @@
             <option value="Урок 4">Lektion 4: Was darf es sein?</option>
             <option value="Урок 5">Lektion 5: Schaut mal, der schöne Dom!</option>
             <option value="Урок 6">Lektion 6: Meine lieblingsveranstaltung </option>
-            <option value="Урок 7">Lektion 7: Wir könnten montags joggen gehen.</option>
+            <option value="Урок 7">Lektion 7: Wir могли montags joggen gehen.</option>
             <option value="Урок 8">Lektion 8: Hoffentlich ist es nicht das Herz! </option>
             <option value="Урок 9">Lektion 9: Bei guten Autos sind wir ganz vorn</option>
             <option value="Урок 10">Lektion 10: Gut, dass du reserviert hast. </option>
@@ -650,7 +650,12 @@
     let currentWordIndex = 0;
     let sessionStarsCount = 0;
 
-    const audioPlayer = new Audio();
+    // Предзагрузка синтеза речи для мобильных браузеров
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.onvoiceschanged = () => {
+            window.speechSynthesis.getVoices();
+        };
+    }
 
     const cardBlock = document.getElementById('card-block');
     const cardMainContent = document.getElementById('card-main-content');
@@ -683,6 +688,12 @@
     const emptyScreen = document.getElementById('empty-screen');
     const modeSwitcherBox = document.getElementById('mode-switcher-box');
     const filterBox = document.getElementById('filter-switcher-box');
+
+    function stopSpeech() {
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+        }
+    }
 
     function shuffle(array) {
         let arr = [...array];
@@ -735,6 +746,7 @@
     }
 
     function changeLesson() {
+        stopSpeech();
         if (!initLessonData()) return;
         currentWordIndex = 0;
         sessionStarsCount = 0;
@@ -748,6 +760,7 @@
     }
 
     function setMode(mode) {
+        stopSpeech();
         currentMode = mode;
         document.getElementById('btn-learn').classList.toggle('active', mode === 'learn');
         document.getElementById('btn-test').classList.toggle('active', mode === 'test');
@@ -764,7 +777,6 @@
             listBlock.style.display = 'block';
             starsBlock.style.display = 'none';
             if (filterBox) filterBox.style.display = 'flex';
-            audioPlayer.pause();
             renderWordList();
         } else {
             cardBlock.style.display = 'block';
@@ -843,22 +855,33 @@
     }
 
     function playCurrentAudio() {
-    if (!currentWords || currentWords.length === 0) return;
-    
-    const wordData = currentWords[currentIndex];
-    if (!wordData) return;
+        if (!currentItem || !currentItem.de) return;
+        if (!('speechSynthesis' in window)) return;
 
-    // Останавливаем предыдущую озвучку, если она идёт
-    window.speechSynthesis.cancel();
+        window.speechSynthesis.cancel(); // Очищаем прошлые очереди
 
-    // Создаём новое речевое высказывание
-    const utterance = new SpeechSynthesisUtterance(wordData.de);
-    utterance.lang = 'de-DE'; // Устанавливаем немецкий язык
-    utterance.rate = 0.9;     // Скорость речи (1.0 — обычная, 0.9 — чуть медленнее для обучения)
+        // Для глаголов озвучиваем Инфинитив + Perfekt
+        let textToSpeak = currentItem.de;
+        if (currentItem.type === 'verb' && currentItem.perfekt) {
+            textToSpeak += `, ${currentItem.perfekt}`;
+        }
 
-    // Воспроизводим
-    window.speechSynthesis.speak(utterance);
-}
+        // Очищаем служебные точки/символы если есть
+        textToSpeak = textToSpeak.replace(/\./g, '');
+
+        const utterance = new SpeechSynthesisUtterance(textToSpeak);
+        utterance.lang = 'de-DE';
+        utterance.rate = 0.9;
+
+        // Поиск немецкого голоса для iOS/Chrome
+        const voices = window.speechSynthesis.getVoices();
+        const deVoice = voices.find(v => v.lang.startsWith('de'));
+        if (deVoice) {
+            utterance.voice = deVoice;
+        }
+
+        window.speechSynthesis.speak(utterance);
+    }
 
     function formatGermanHTML(item) {
         let textHtml = '';
@@ -875,6 +898,7 @@
     }
 
     function showFinalResults() {
+        stopSpeech();
         cardMainContent.style.display = 'none';
         starsBlock.style.display = 'none';
         cardResultsContent.style.display = 'block';
@@ -891,12 +915,14 @@
     }
 
     function restartTestSession() {
+        stopSpeech();
         sessionStarsCount = 0;
         activeWords.forEach(item => item.persistentStars = 0); 
         setMode('test'); 
     }
 
     function prevWord() {
+        stopSpeech();
         if (currentMode === 'learn' && currentWordIndex > 0) {
             currentWordIndex--;
             nextWord();
@@ -904,6 +930,7 @@
     }
 
     function nextWord() {
+        stopSpeech();
         let currentQueue = (currentMode === 'learn') ? learnQueue : testQueue;
         
         if (currentWordIndex >= currentQueue.length) {
@@ -928,7 +955,6 @@
         input2.style.borderColor = '#ced4da';
         
         closeContext();
-        audioPlayer.pause();
 
         if (currentMode === 'learn') {
             ruWordEl.innerHTML = currentItem.ru;
