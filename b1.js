@@ -22,7 +22,7 @@ const dictionary = {
     // ДРУГИЕ ЧАСТИ РЕЧИ И ФРАЗЫ
     { type: "other", de: "aufmerksam", ru: "внимательный" },
     { type: "other", de: "ernst", ru: "серьёзный" },
-    { type: "other", de: "fair", ru: "переходный / справедливый" },
+    { type: "other", de: "fair", ru: "честный / порядочный / справедливый" },
     { type: "other", de: "frech", ru: "наглый" },
     { type: "other", de: "großzügig", ru: "щедрый / добродушный" },
     { type: "other", de: "intelligent", ru: "умный" },
