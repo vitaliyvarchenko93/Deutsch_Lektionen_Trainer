@@ -15,7 +15,7 @@ const dictionary = {
 
     // ГЛАГОЛЫ
     { type: "verb", de: "beeinflussen", perfekt: "hat beeinflusst", ru: "влиять", context: { de: "Das Wetter beeinflusst meine Laune.", ru: "Погода влияет на моё настроение." } },
-    { type: "verb", de: "ein.schlafen", perfekt: "ist eingeschlafen", ru: "засыпать", context: { de: "Er ist gestern sehr spät eingeschlafen.", ru: "Вчера он заснул очень поздно." } },
+    { type: "verb", de: "einschlafen", perfekt: "ist eingeschlafen", ru: "засыпать", context: { de: "Er ist gestern sehr spät eingeschlafen.", ru: "Вчера он заснул очень поздно." } },
     { type: "verb", de: "unterstützen", perfekt: "hat unterstützt", ru: "поддерживать", context: { de: "Meine Familie hat mich immer unterstützt.", ru: "Моя семья всегда меня поддерживала." } },
     { type: "verb", de: "sich verabschieden", perfekt: "hat sich verabschiedet", ru: "прощаться", context: { de: "Wir haben uns am Bahnhof verabschiedet.", ru: "Мы попрощались на вокзале." } },
 
