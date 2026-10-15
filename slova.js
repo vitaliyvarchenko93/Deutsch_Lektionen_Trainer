@@ -1037,5 +1037,5 @@ const dictionary = {
     { type: "other", de: "sinnvoll", ru: "осмысленный / целесообразный" },
     { type: "other", de: "wach", ru: "бодрствующий / проснувшийся" },
     { type: "other", de: "einen Pass verlängern", ru: "продлевать паспорт" }
-  ]
+  ],
 };
