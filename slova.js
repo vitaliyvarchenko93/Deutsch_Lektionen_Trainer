@@ -957,4 +957,85 @@ const dictionary = {
     { type: "other", de: "unterwegs", ru: "в пути / по дороге" },
     { type: "other", de: "unterwegs sein", ru: "быть в пути / находиться в дороге" }
   ],
+  "Урок 23": [
+    // СУЩЕСТВИТЕЛЬНЫЕ
+    { type: "noun", de: "das Abitur", ru: "аттестат зрелости / выпускные экзамены в гимназии" },
+    { type: "noun", de: "die Berufsschule", ru: "профессионально-техническое училище (ПТУ)" },
+    { type: "noun", de: "die Fachhochschule", ru: "высшее специальное учебное заведение / институт прикладных наук" },
+    { type: "noun", de: "die Gesamtschule", ru: "объединённая / общеобразовательная школа" },
+    { type: "noun", de: "die Grundschule", ru: "начальная школа" },
+    { type: "noun", de: "das Gymnasium", ru: "гимназия" },
+    { type: "noun", de: "die Hauptschule", ru: "основная / общеобразовательная школа" },
+    { type: "noun", de: "die Lehre", ru: "производственное обучение / ученичество" },
+    { type: "noun", de: "die Note", ru: "оценка / отметка" },
+    { type: "noun", de: "die Realschule", ru: "реальная школа" },
+    { type: "noun", de: "das Zeugnis", ru: "аттестат / табель / свидетельство" },
+    { type: "noun", de: "die Schule", ru: "школа" },
+    { type: "noun", de: "die Prüfung", ru: "экзамен / проверка" },
+    { type: "noun", de: "der Schulabschluss", ru: "окончание школы / школьный аттестат" },
+    { type: "noun", de: "die Ausbildung", ru: "профессиональное обучение / образование" },
+    { type: "noun", de: "das Studium", ru: "учёба в ВУЗе" },
+    { type: "noun", de: "die Universität", ru: "университет" },
+    { type: "noun", de: "das Semester", ru: "семестр" },
+    { type: "noun", de: "der Lebenslauf", ru: "автобиография / резюме (CV)" },
+    { type: "noun", de: "die Bewerbung", ru: "заявление о приёме на работу / резюме" },
+    { type: "noun", de: "das Einkommen", ru: "доход / заработок" },
+    { type: "noun", de: "die Kündigung", ru: "увольнение / расторжение договора" },
+    { type: "noun", de: "der Praktikant", ru: "практикант / стажёр" },
+    { type: "noun", de: "die Tätigkeit", ru: "деятельность / работа" },
+    { type: "noun", de: "der Elektroinstallateur", ru: "электромонтажник / электрик" },
+    { type: "noun", de: "die Laune", ru: "настроение" },
+    { type: "noun", de: "das Thema", ru: "тема" },
+
+    // ГЛАГОЛЫ
+    { type: "verb", de: "sich bewerben um", perfekt: "hat sich beworben", ru: "подавать заявление о приёме на работу (+ Akk.)", context: { de: "Er hat sich um die Stelle beworben.", ru: "Он подал заявление на эту должность." } },
+    { type: "verb", de: "kündigen", perfekt: "hat gekündigt", ru: "увольняться / расторгать договор", context: { de: "Sie hat gestern gekündigt.", ru: "Она вчера уволилась." } },
+    { type: "verb", de: "kopieren", perfekt: "hat kopiert", ru: "копировать / делать копию", context: { de: "Können Sie das Dokument kopieren?", ru: "Можете скопировать этот документ?" } },
+    { type: "verb", de: "stören", perfekt: "hat gestört", ru: "мешать / беспокоить", context: { de: "Das stört mich nicht.", ru: "Это мне не мешает." } },
+    { type: "verb", de: "vorhaben", perfekt: "hat vorgehabt", ru: "намереваться / планировать", context: { de: "Was hast du heute vor?", ru: "Что ты планируешь на сегодня?" } },
+
+    // ДРУГИЕ ЧАСТИ РЕЧИ И ФРАЗЫ
+    { type: "other", de: "mündlich", ru: "устный / устно" },
+    { type: "other", de: "schriftlich", ru: "письменный / письменно" },
+    { type: "other", de: "eigentlich", ru: "на самом деле / в сущности" },
+    { type: "other", de: "freiwillig", ru: "добровольный / добровольно" },
+    { type: "other", de: "genug", ru: "достаточно" },
+    { type: "other", de: "genug haben", ru: "сыт по горло / с меня хватит" },
+    { type: "other", de: "neulich", ru: "недавно / на днях" },
+    { type: "other", de: "vorgestern", ru: "позавчера" },
+    { type: "other", de: "Das habe ich vor.", ru: "У меня это в планах / Я это планирую." }
+  ],
+  "Урок 24": [
+    // СУЩЕСТВИТЕЛЬНЫЕ
+    { type: "noun", de: "der Abflug", ru: "вылет / отправление самолёта" },
+    { type: "noun", de: "der Anschluss", ru: "пересадка / стыковочный рейс" },
+    { type: "noun", de: "die Impfung", ru: "прививка / вакцинация" },
+    { type: "noun", de: "das Konsulat", ru: "консульство" },
+    { type: "noun", de: "die Kontrolle", ru: "контроль / проверка" },
+    { type: "noun", de: "der Pass", ru: "паспорт" },
+    { type: "noun", de: "die Verspätung", ru: "опоздание / задержка" },
+    { type: "noun", de: "das Visum", ru: "виза" },
+    { type: "noun", de: "der Zoll", ru: "таможня" },
+    { type: "noun", de: "die Ankunft", ru: "прибытие / прилёт" },
+    { type: "noun", de: "die Grenze", ru: "граница" },
+    { type: "noun", de: "das Apartment", ru: "апартаменты / квартира" },
+    { type: "noun", de: "die Erinnerung", ru: "воспоминание / память" },
+    { type: "noun", de: "die Geburt", ru: "рождение" },
+    { type: "noun", de: "die Kenntnis", ru: "знание / навык" },
+    { type: "noun", de: "das Zuhause", ru: "дом / домашний очаг" },
+    { type: "noun", de: "die Zukunft", ru: "будущее" },
+
+    // ГЛАГОЛЫ
+    { type: "verb", de: "beantragen", perfekt: "hat beantragt", ru: "подавать заявление / запрашивать", context: { de: "Er hat ein Visum beantragt.", ru: "Он подал заявление на визу." } },
+    { type: "verb", de: "verlängern", perfekt: "hat verlängert", ru: "продлевать", context: { de: "Ich muss meinen Pass verlängern.", ru: "Мне нужно продлить свой паспорт." } },
+    { type: "verb", de: "leiten", perfekt: "hat geleitet", ru: "руководить / управлять / вести", context: { de: "Sie leitet die Abteilung.", ru: "Она руководит отделом." } },
+    { type: "verb", de: "sich verabreden", perfekt: "hat sich verabredet", ru: "договариваться о встрече", context: { de: "Wir haben uns für den Abend verabredet.", ru: "Мы договорились о встрече на вечер." } },
+
+    // ДРУГИЕ ЧАСТИ РЕЧИ И ФРАЗЫ
+    { type: "other", de: "gültig", ru: "действительный / действителен" },
+    { type: "other", de: "ähnlich", ru: "похожий / подобный" },
+    { type: "other", de: "sinnvoll", ru: "осмысленный / целесообразный" },
+    { type: "other", de: "wach", ru: "бодрствующий / проснувшийся" },
+    { type: "other", de: "einen Pass verlängern", ru: "продлевать паспорт" }
+  ]
 };
