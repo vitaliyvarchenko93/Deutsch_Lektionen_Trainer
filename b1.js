@@ -45,5 +45,5 @@ const dictionary = {
     { type: "other", de: "perfekt", ru: "превосходно" },
     { type: "other", de: "diesmal", ru: "в этот раз" },
     { type: "other", de: "ebenso", ru: "также" }
-  ]
+  ],
 };
