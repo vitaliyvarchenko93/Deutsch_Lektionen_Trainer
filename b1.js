@@ -46,4 +46,51 @@ const dictionary = {
     { type: "other", de: "diesmal", ru: "в этот раз" },
     { type: "other", de: "ebenso", ru: "также" }
   ],
+  "Урок 2": [
+  // СУЩЕСТВИТЕЛЬНЫЕ
+  { type: "noun", de: "der Auszubildende", ru: "учащийся, стажёр (мужского пола)" },
+  { type: "noun", de: "die Auszubildende", ru: "учащаяся, стажёрка (женского пола)" },
+  { type: "noun", de: "die Überstunde", ru: "сверхурочная работа" },
+  { type: "noun", de: "das Gehalt", ru: "оклад, зарплата" },
+  { type: "noun", de: "die Steuer", ru: "налог" },
+  { type: "noun", de: "die Chefin", ru: "начальница" },
+  { type: "noun", de: "die Leiterin", ru: "руководительница" },
+  { type: "noun", de: "die Teambesprechung", ru: "совещание команды, командное обсуждение" },
+  { type: "noun", de: "die Teilzeit", ru: "неполный рабочий день" },
+  { type: "noun", de: "die Vollzeit", ru: "полный рабочий день" },
+  { type: "noun", de: "der Tagesablauf", ru: "распорядок дня" },
+  { type: "noun", de: "der Erzieher", ru: "воспитатель" },
+  { type: "noun", de: "das Klima", ru: "климат" },
+  { type: "noun", de: "das Betriebsklima", ru: "климат в коллективе, психологическая атмосфера" },
+  { type: "noun", de: "die Leistung", ru: "достижение, производительность, услуга" },
+  { type: "noun", de: "der Leiter", ru: "руководитель, заведующий" },
+  { type: "noun", de: "die Praxis", ru: "практика" },
+  { type: "noun", de: "die Theorie", ru: "теория" },
+  { type: "noun", de: "die Verantwortung", ru: "ответственность" },
+  { type: "noun", de: "die Gelegenheit", ru: "благоприятная возможность, случай" },
+  { type: "noun", de: "der Held", ru: "герой" },
+  { type: "noun", de: "der Lärm", ru: "шум" },
+
+  // ГЛАГОЛЫ
+  { type: "verb", de: "sich beschäftigen", perfekt: "hat sich beschäftigt", ru: "заниматься (чем-либо)", context: { de: "Er beschäftigt sich mit diesem Projekt.", ru: "Он занимается этим проектом." } },
+  { type: "verb", de: "duzen", perfekt: "hat geduzt", ru: "обращаться на «ты»", context: { de: "In dieser Firma duzen sich alle.", ru: "В этой фирме все обращаются друг к другу на «ты»." } },
+  { type: "verb", de: "erledigen", perfekt: "hat erledigt", ru: "выполнять, улаживать", context: { de: "Sie hat ihre Arbeit schnell erledigt.", ru: "Она быстро выполнила свою работу." } },
+  { type: "verb", de: "etwas übernehmen", perfekt: "hat etwas übernommen", ru: "брать на себя что-либо", context: { de: "Er hat die Verantwortung übernommen.", ru: "Он взял на себя ответственность." } },
+  { type: "verb", de: "sich entschließen", perfekt: "hat sich entschlossen", ru: "решаться", context: { de: "Sie hat sich entschlossen, den Job zu wechseln.", ru: "Она решилась сменить работу." } },
+  { type: "verb", de: "erwarten", perfekt: "hat erwartet", ru: "ожидать", context: { de: "Wir erwarten eine wichtige E-Mail.", ru: "Мы ждем важное электронное письмо." } },
+  { type: "verb", de: "führen", perfekt: "hat geführt", ru: "вести, руководить", context: { de: "Er führt ein großes Team.", ru: "Он руководит большой командой." } },
+  { type: "verb", de: "überlegen", perfekt: "hat überlegt", ru: "обдумывать, размышлять", context: { de: "Ich muss mir das noch überlegen.", ru: "Мне нужно еще обдумать это." } },
+  { type: "verb", de: "übrig·bleiben", perfekt: "ist übrig geblieben", ru: "оставаться", context: { de: "Es ist nicht mehr viel Zeit übrig geblieben.", ru: "Осталось совсем немного времени." } },
+  { type: "verb", de: "sich etwas vor·stellen", perfekt: "hat sich etwas vorgestellt", ru: "представлять себе что-либо", context: { de: "Kannst du dir das vorstellen?", ru: "Ты можешь себе это представить?" } },
+  { type: "verb", de: "zurecht·kommen", perfekt: "ist zurechtgekommen", ru: "справляться, ладить", context: { de: "Er kommt mit der neuen Software gut zurecht.", ru: "Он хорошо справляется с новым программным обеспечением." } },
+
+  // ДРУГИЕ ЧАСТИ РЕЧИ И ФРАЗЫ
+  { type: "other", de: "brutto", ru: "брутто (грязными)" },
+  { type: "other", de: "netto", ru: "нетто (чистыми)" },
+  { type: "other", de: "zuverlässig", ru: "надёжный" },
+  { type: "other", de: "gering", ru: "небольшой, малый" },
+  { type: "other", de: "merkwürdig", ru: "странный" },
+  { type: "other", de: "sozial", ru: "социальный" },
+  { type: "other", de: "süß", ru: "милый, сладкий" }
+]
 };
