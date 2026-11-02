@@ -1,6 +1,6 @@
 {
   "name": "Deutsch Lektionen Trainer",
-  "short_name": "Lektionen",
+  "short_name": "Deutsch Lektionen Trainer",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
