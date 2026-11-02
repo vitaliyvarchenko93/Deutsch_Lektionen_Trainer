@@ -1,218 +1,201 @@
 <!DOCTYPE html>
-
 <html lang="ru">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Lektionen Trainer — Выбор уровня</title>
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#000000">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
   <style>
-
     * {
-
       box-sizing: border-box;
-
       margin: 0;
-
       padding: 0;
-
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-
     }
-
-
-
     body {
-
       background-color: #0f172a;
-
       color: #f8fafc;
-
       min-height: 100vh;
-
+      min-height: 100dvh;
       display: flex;
-
+      flex-direction: column;
       align-items: center;
-
-      justify-content: center;
-
-      padding: 20px;
-
+      justify-content: space-between;
+      padding: 24px 16px env(safe-area-inset-bottom, 24px) 16px;
     }
-
-
-
     .selector-container {
-
       width: 100%;
-
       max-width: 500px;
-
-      text-align: center;
-
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      flex-grow: 1;
+      justify-content: space-between;
     }
-
-
-
     .title {
-
       font-size: 1.6rem;
-
       font-weight: 600;
-
-      margin-bottom: 28px;
-
+      margin-top: 12px;
+      margin-bottom: 24px;
       color: #f1f5f9;
-
+      text-align: center;
+      word-break: break-word;
     }
-
-
-
     .grid {
-
       display: grid;
-
       grid-template-columns: 1fr 1fr;
-
-      gap: 20px;
-
+      gap: 16px;
+      margin-bottom: auto;
     }
-
-
-
     .option-card {
-
       background: #1e293b;
-
       border: 2px solid #334155;
-
       border-radius: 14px;
-
-      padding: 32px 20px;
-
+      padding: 28px 16px;
       cursor: pointer;
-
       transition: all 0.2s ease;
-
       user-select: none;
-
       text-decoration: none;
-
-      display: block;
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
-
-
-
-    .option-card:hover {
-
+    .option-card:hover, .option-card:active {
       border-color: #38bdf8;
-
       background: #243248;
-
-      transform: translateY(-3px);
-
+      transform: translateY(-2px);
       box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.25);
-
     }
-
-
-
     .option-title {
-
       font-size: 2rem;
-
       font-weight: 700;
-
       color: #38bdf8;
-
       margin-bottom: 8px;
-
     }
-
-
-
     .option-subtitle {
-
       font-size: 0.875rem;
-
       color: #94a3b8;
-
     }
 
+    /* Модальное окно «В разработке» */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(4px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+      z-index: 1000;
+    }
+    .modal-overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .modal-card {
+      background: #1e293b;
+      border: 2px solid #38bdf8;
+      border-radius: 16px;
+      padding: 28px 20px;
+      width: 85%;
+      max-width: 340px;
+      text-align: center;
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    .modal-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+    .modal-text {
+      font-size: 0.95rem;
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
+    .modal-btn {
+      background: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
   </style>
-
 </head>
-
 <body>
 
-
-
   <div class="selector-container">
-
     <h1 class="title">Выбор уровня тренажера</h1>
-
     
-
     <div class="grid">
-
       <!-- Кнопка A1 -->
-
       <a class="option-card" href="Lektionen Trainer A1.html">
-
         <div class="option-title">A1</div>
-
         <div class="option-subtitle">Lektionen Trainer A1</div>
-
       </a>
-
-
-
-      <!-- Кнопка A2 -->
-
-      <a class="option-card" href="Lektionen Trainer A2.html">
-
-        <div class="option-title">A2</div>
-
-        <div class="option-subtitle">Lektionen Trainer A2</div>
-
-      </a>
-
-
-       <!-- Кнопка B1 -->
-
-      <a class="option-card" href="Lektionen Trainer B1.html">
-
-        <div class="option-title">B1</div>
-
-        <div class="option-subtitle">Lektionen Trainer B1</div>
-        </a>
-
       
-       <!-- Кнопка B2 -->
-
-      <a class="option-card" href="Lektionen Trainer B2.html">
-
-        <div class="option-title">B2</div>
-
-        <div class="option-subtitle">Lektionen Trainer B2</div>
-
+      <!-- Кнопка A2 -->
+      <a class="option-card" href="Lektionen Trainer A2.html">
+        <div class="option-title">A2</div>
+        <div class="option-subtitle">Lektionen Trainer A2</div>
       </a>
+      
+      <!-- Кнопка B1 -->
+      <a class="option-card" href="Lektionen Trainer B1.html">
+        <div class="option-title">B1</div>
+        <div class="option-subtitle">Lektionen Trainer B1</div>
+      </a>
+      
+      <!-- Кнопка B2 -->
+      <div class="option-card" id="btn-b2">
+        <div class="option-title">B2</div>
+        <div class="option-subtitle">Lektionen Trainer B2</div>
+      </div>
     </div>
+  </div>
 
+  <!-- Всплывающее окно -->
+  <div class="modal-overlay" id="dev-modal">
+    <div class="modal-card">
+      <div class="modal-title">Страница в разработке</div>
+      <div class="modal-text">Раздел находится в разработке.</div>
+      <button class="modal-btn" onclick="closeModal()">Понятно</button>
+    </div>
   </div>
 
 <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js');
   }
+
+  const btnB2 = document.getElementById('btn-b2');
+  const modal = document.getElementById('dev-modal');
+
+  btnB2.addEventListener('click', () => {
+    modal.classList.add('active');
+  });
+
+  function closeModal() {
+    modal.classList.remove('active');
+  }
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
 </script>
-
 </body>
-
 </html>
