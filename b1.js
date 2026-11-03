@@ -120,7 +120,7 @@ const dictionary = {
   { type: "noun", de: "die Kosten", ru: "расходы, затраты" },
   { type: "noun", de: "die Lage", ru: "расположение, положение" },
   { type: "noun", de: "die Höhe", ru: "высота, уровень" },
-  { type: "noun", de: "die Miethöhe", ru: "размер квартплаты" },
+  { type: "noun", de: "die Miethöhe", ru: "размер арендной платы" },
   { type: "noun", de: "der Mülleimer", ru: "мусорное ведро" },
   { type: "noun", de: "das Quartier", ru: "квартал, жилой район" },
   { type: "noun", de: "die Terrasse", ru: "терраса" },
