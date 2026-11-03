@@ -164,5 +164,5 @@ const dictionary = {
   { type: "other", de: "kürzlich", ru: "недавно, на днях" },
   { type: "other", de: "vorhin", ru: "недавно, только что (ранее)" },
   { type: "other", de: "allerdings", ru: "однако, правда" }
-]
+],
 };
